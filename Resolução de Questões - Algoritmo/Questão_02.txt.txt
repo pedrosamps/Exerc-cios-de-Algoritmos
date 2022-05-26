@@ -1,0 +1,12 @@
+#Faça um programa que leia o nome de uma pessoa e mostre uma mensagem
+de boas-vindas para ela.
+
+-> RESPOSTA: 
+
+VAR
+n: caractere
+
+INÍCIO
+Escreva("Nome: ")
+Leia(n)
+Escreva("Olá, ", n,". Seja bem-vindo!")
