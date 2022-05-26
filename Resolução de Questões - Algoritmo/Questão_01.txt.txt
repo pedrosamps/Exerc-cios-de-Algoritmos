@@ -1,0 +1,5 @@
+#Escreva um programa que mostre a mensagem "Olá, mundo".
+
+-> Resposta: 
+
+Escreva("Olá, mundo!")
