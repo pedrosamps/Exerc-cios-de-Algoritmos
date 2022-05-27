@@ -1,0 +1,12 @@
+#Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$)
+e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$3,45.
+
+-> RESPOSTA
+
+VAR
+r: real
+
+INÍCIO
+escreva("Reais em carteira: ")
+leia(r)
+escreva("Você pode comprar U$ ", r/3.45)
