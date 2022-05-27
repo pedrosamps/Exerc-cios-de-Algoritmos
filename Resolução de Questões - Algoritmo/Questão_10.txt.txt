@@ -14,4 +14,4 @@ escreva("Largura: ")
 leia(largura)
 litro <- area * largura / 2
 escreva("Metragem quadrada: ", area*largura)
-escreva("Serão necessários: ", lt," litros de tinta")
+escreva("Serão necessários: ", litro," litros de tinta")
