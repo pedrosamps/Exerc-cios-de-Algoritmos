@@ -1,0 +1,15 @@
+#Crie um programa que leia o nome e o salário de um funcionário,
+#mostrando no final uma mensagem
+
+-> RESPOSTA: 
+
+VAR
+nome: caractere
+sal: real
+
+INÍCIO
+escreva("Digite o seu nome: ")
+leia(nome)
+escreva("Digite o seu salário: R$ ")
+leia(sal)
+escreva("Funcionário: ", nome,". Salário: R$ ", sal)
