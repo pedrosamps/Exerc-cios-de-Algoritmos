@@ -1,0 +1,14 @@
+#Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório
+entre eles.
+
+-> RESPOSTA
+
+VAR
+n1, n2: inteiro
+
+INÍCIO
+escreva("Digite o 1º número: ")
+leia(n1)
+escreva("Digite o 2º número: ")
+leia(n2)
+escreva("A soma de ",n1," e ",n2," é igual a ", n1+n2)
