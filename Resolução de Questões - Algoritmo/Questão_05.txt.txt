@@ -1,0 +1,15 @@
+#Faça um programa que leia as duas notas de um aluno em uma matéria e mostre
+na tela a sua média na disciplina.
+
+-> RESPOSTA
+
+VAR
+n1, n2, med: real
+
+INÍCIO
+escreva("Digite a 1ª nota: ")
+leia(n1)
+escreva("Digite a 2ª nota: ")
+leia(n2)
+med <- (n1 + n2)/2
+escreva("A média do aluno (a): ", med)
