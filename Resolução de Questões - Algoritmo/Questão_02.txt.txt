@@ -1,12 +1,13 @@
-#Faça um programa que leia o nome de uma pessoa e mostre uma mensagem
-de boas-vindas para ela.
+#Faça um programa que leia o nome de uma pessoa e mostre uma 
+#mensagem de boas-vindas
+
 
 -> RESPOSTA: 
 
 VAR
-n: caractere
+nome: caractere
 
 INÍCIO
-Escreva("Nome: ")
-Leia(n)
-Escreva("Olá, ", n,". Seja bem-vindo!")
+escreva("Digite o seu nome: ")
+leia(nome)
+escreva("Olá, ", nome, "! Seja bem-vindo.")
