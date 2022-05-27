@@ -1,0 +1,13 @@
+#Faça um programa que leia um número inteiro e mostre o seu antecessor e seu
+sucessor.
+
+-> RESPOSTA
+
+VAR
+n1: inteiro
+
+INÍCIO
+escreva("Digite um número: ")
+leia(n1)
+escreva("Antecessor: ", n1-1)
+escreva("Sucessor: ", n1+1)
