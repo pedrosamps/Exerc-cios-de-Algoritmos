@@ -1,0 +1,21 @@
+#Desenvolva um programa que leia uma distância em metros e mostre os valores
+relativos em outras medidas.
+Ex:
+Digite uma distância em metros: 185.72
+A distância de 85.7m corresponde a:
+0.18572Km
+1.8572Hm
+18.572Dam
+1857.2dm
+18572.0cm
+185720.0mm
+
+-> RESPOSTA
+
+VAR
+m: real
+
+INÍCIO
+escreva("Metro: ")
+leia(m)
+escreva("A conversão para Km é ", m/1000, ". Hm é ", m/100, ". Dam é ", m/10, ". Dm é ", m*10, ". Cm é ", m*100, ". Mm é ", m*1000,".")
