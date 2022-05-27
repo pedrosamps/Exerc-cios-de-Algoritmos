@@ -1,0 +1,12 @@
+#Crie um programa que leia o preço de um produto, calcule e mostre o seu
+PREÇO PROMOCIONAL, com 5% de desconto.
+
+-> RESPOSTA
+
+VAR
+p: real
+
+INÍCIO
+escreva("Preço original: R$ ")
+leia(p)
+escreva("Preço com desconto de 5%: R$ ", p-(p*5/100))
