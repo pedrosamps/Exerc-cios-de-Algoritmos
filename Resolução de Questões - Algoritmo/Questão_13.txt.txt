@@ -1,0 +1,12 @@
+#Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+seu novo salário, com 15% de aumento.
+
+-> RESPOSTA
+
+VAR
+sal: real
+
+INÍCIO
+escreva("Salário original: R$ ")
+leia(sal)
+escreva("Novo salário com aumento de 15%: R$ ", sal + (sal*15/100))
