@@ -1,0 +1,55 @@
+#Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.
+O programa vai perguntar se o usuário quer ou não continuar. No final, mostre:
+a) O nome da pessoa mais velha
+b) O nome da mulher mais jovem
+c) A média de idade do grupo
+d) Quantos homens tem mais de 30 anos
+e) Quantas mulheres tem menos de 18 anos
+
+-> RESPOSTA
+
+VAR
+nome, sexo, cont, nomejovem, nomevelho: caractere
+id, toth30, totm18, tot, soma, maior, menor: inteiro
+med: real
+
+INICIO
+cont <- "S"
+enquanto (copia(maiusc(cont),1,1 = "S") faça
+ escreva("NOME: ")
+ leia(nome)
+ escreva("IDADE: ")
+ leia(id)
+ soma <- soma + id
+ escreva("SEXO [M / F]: ")
+ leia(sexo)
+ escreva("CONTINUAR [S / N]: ")
+ leia(cont)
+ se (id > maior) entao
+  maior <- id
+  nomevelho <- nome
+ fimse
+ Se (copia(maiusc(cont),1,1 = "M") entao
+   Se (id > 30) entao
+     toth30 <- toth30 + 1
+   fimse
+ fimse
+ Se (cont = 1) entao
+   Se (copia(maiusc(cont),1,1 = "M") entao
+     Se (id < menor) entao
+       menor <- id
+       nomejovem <- nome
+       Se (id < 18) entao
+         totm18 <- totm18 + 1
+       fimse
+     fimse
+   fimse
+   tot <- tot + 1
+   fimse
+med <- soma / tot
+fimenquanto
+Escreval("Nome da pessoa mais velha: ", nomevelho)
+escreval("Nome da mulher mais jovem: ", nomejovem)
+escreval("Média de idade: ", med)
+escreval("Total de Homens + 30 anos: ", toth30)
+escreval("Total de Mulheres - 18 anos: ", totm18)
