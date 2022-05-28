@@ -1,0 +1,25 @@
+#Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando
+na tela uma das mensagens abaixo:
+- O primeiro valor é o maior
+- O segundo valor é o maior
+- Não existe valor maior, os dois são iguais
+
+-> RESPOSTA
+
+VAR
+v1, v2: inteiro
+
+INICIO
+escreva("1º valor: ")
+leia(v1)
+escreva("2º valor: ")
+leia(v2)
+Se v1 > v2 entao
+   escreva("O 1º valor é maior!")
+fimse
+Se v2 > v1 entao
+   escreva("O 2º valor é maior!")
+fimse
+Se v1 = v2 entao
+   escreva("Os valores são IGUAIS!")
+fimse

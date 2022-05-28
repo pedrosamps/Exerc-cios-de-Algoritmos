@@ -1,0 +1,21 @@
+#[DESAFIO] Crie um jogo onde o computador vai sortear um número entre 1 e 5 o
+jogador vai tentar descobrir qual foi o valor sorteado.
+
+-> RESPOSTA
+
+VAR
+comp, jog: inteiro
+
+INICIO
+Repita
+escreva("Digite um número de 1 a 5: ")
+leia(jog)
+comp <- randi (5)+1
+escreval("Você escolheu o número ", jog)
+escreval("Computador escolheu o número ", comp)
+Se (jog = comp) entao
+   escreval("Parabéns! Você acertou o número.")
+senao
+   escreval("Você errou o número. Tente novamente!")
+fimse
+Até (jog = comp)

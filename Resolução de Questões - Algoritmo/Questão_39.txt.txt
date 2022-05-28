@@ -1,0 +1,15 @@
+#Faça um algoritmo que mostre na tela a seguinte contagem:
+10 9 8 7 6 5 4 3 Acabou!
+
+-> RESPOSTA
+
+VAR
+c: inteiro
+
+INICIO
+c <- 10
+enquanto (c >= 3) faça
+   escreva(c, "...")
+   c <- c - 1
+fimenquanto
+escreva("Acabou!")

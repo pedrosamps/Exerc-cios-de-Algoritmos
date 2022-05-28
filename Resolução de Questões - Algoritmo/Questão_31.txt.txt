@@ -1,0 +1,36 @@
+#[DESAFIO] Crie um jogo de JoKenPo (Pedra-Papel-Tesoura)
+
+-> RESPOSTA
+
+VAR
+comp, jog: inteiro
+
+INICIO
+escreval("1 - PEDRA")
+escreval("2 - PAPEL")
+escreval("3 - TESOURA")
+escreva("Escolha uma das opções acima [1 / 2 / 3]: ")
+leia(jog)
+Se jog = 1 entao
+   escreva("PEDRA!")
+   senao
+     se jog = 2 entao
+        escreva("PAPEL!")
+        senao
+          se jog = 3 entao
+             escreva("TESOURA!")
+	  fimse
+       fimse
+    fimse
+comp <- randi(3)
+Se (jog = 1) e (comp = 3) ou (jog = 2) e (comp = 1) ou (jog = 3) e (comp = 2) entao
+   escreval("Jogador VENCEU!")
+   senao
+     Se (jog = 3) e (comp = 1) ou (jog = 1) e (comp = 2) ou (jog = 2) e (comp = 3) entao
+   	escreval("Computador VENCEU!")
+     senao
+	se (jog = comp) entao
+	   escreval("EMPATE!")
+	fimse
+     fimse
+fimse

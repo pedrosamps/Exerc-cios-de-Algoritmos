@@ -1,0 +1,16 @@
+#Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou
+ÍMPAR.
+
+-> RESPOSTA
+
+VAR
+n1: inteiro
+
+INÍCIO
+escreva("Digite um número: ")
+leia(n1)
+Se (n1 % 2 = 0) entao
+   escreva("O número digitado é PAR!")
+senao
+   escreva("O número digitado é ÍMPAR!")
+fimse

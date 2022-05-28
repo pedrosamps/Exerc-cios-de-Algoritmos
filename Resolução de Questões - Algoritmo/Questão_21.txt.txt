@@ -1,0 +1,16 @@
+#Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
+BISSEXTO.
+
+-> RESPOSTA
+
+VAR
+ano: inteiro
+
+INÍCIO
+escreva("Digite um ano qualquer: ")
+leia(ano)
+Se (((ano % 4 = 0)))  e (((ano % 100 <> 0))) ou (ano % 400 = 0) entao
+   escreva("O ano digitado é BISSEXTO.")
+senao
+   escreva("O ano digitado NÃO é bissexto.")
+fimse

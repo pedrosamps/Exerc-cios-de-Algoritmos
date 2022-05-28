@@ -1,0 +1,19 @@
+#Faça um algoritmo que pergunte a distância que um passageiro deseja
+percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para
+viagens até 200Km e R$0.45 para viagens mais longas.
+
+-> RESPOSTA
+
+VAR
+km, valor: real
+
+INÍCIO
+escreva("Quantos KM deseja percorrer: ")
+leia(km)
+Se km <= 200 entao
+   valor <- km * 0.50
+   escreval("Sua viagem custará: R$ ", valor)
+senao
+   valor <- km * 0.45
+   escreval("Sua viagem custará: R$ ", valor)
+fimse

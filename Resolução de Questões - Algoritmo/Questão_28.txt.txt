@@ -1,0 +1,28 @@
+#Faça um programa que leia a largura e o comprimento de um terreno
+retangular, calculando e mostrando a sua área em m². O programa também
+devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+- Abaixo de 100m² = TERRENO POPULAR
+- Entre 100m² e 500m² = TERRENO MASTER
+- Acima de 500m² = TERRENO VIP
+
+-> RESPOSTA
+
+VAR
+l, c, m: real
+
+INICIO
+escreva("Largura: ")
+leia(l)
+escreva("Comprimento: ")
+leia(c)
+m <- l * c
+escreva("A metragem quadrada é ", m)
+Se m > 500 entao
+   escreva("Terreno VIP!")
+fimse
+Se (m >= 100) e (m <= 500) entao
+   escreva("Terreno MASTER!")
+fimse
+Se (m < 100) entao
+   escreva("Terreno POPULAR!")
+fimse

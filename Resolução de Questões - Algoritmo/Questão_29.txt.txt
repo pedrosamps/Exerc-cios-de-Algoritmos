@@ -1,0 +1,30 @@
+#Desenvolva um programa que leia o nome de um funcionário, seu salário,
+quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de
+acordo com a tabela a seguir:
+- Até 3 anos de empresa: aumento de 3%
+- entre 3 e 10 anos: aumento de 12.5%
+- 10 anos ou mais: aumento de 20%
+
+-> RESPOSTA
+
+VAR
+nome: caractere
+sal: real
+ano: inteiro
+
+INICIO
+escreva("NOME: ")
+leia(nome)
+escreva("Salário: R$ ")
+leia(sal)
+escreva("Anos trabalho na empresa: ")
+(ano)
+Se (ano <= 3) entao
+   escreva("Novo salário: R$ ", sal+(sal*3/100))
+fimse
+Se (ano > 3) e (ano <= 10) entao
+   escreva("Novo salário: R$ ", sal+(sal*12.5/100))
+fimse
+Se (ano > 10) entao
+   escreva("Novo salário: R$ ", sal+(sal*20/100))
+fimse
