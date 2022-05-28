@@ -1,0 +1,22 @@
+#Desenvolva um aplicativo que mostre na tela o resultado da expressão 500 +
+450 + 400 + 350 + 300 + ... + 50 + 0
+
+-> RESOLVIDO
+
+VAR
+c, soma: inteiro
+
+INICIO
+c <- 500
+soma <- 0
+enquanto (c >= 0) faça
+  soma <- soma + c
+  escreva(c)
+  se c = 0 entao
+     escreva("=")
+   senao
+     escreva("+")
+   fimse
+   c <- c - 50
+fimenquanto
+escreva(soma)

@@ -1,0 +1,29 @@
+#Desenvolva um programa que faça o sorteio de 20 números entre 0 e 10 e
+mostre na tela:
+a) Quais foram os números sorteados
+b) Quantos números estão acima de 5
+c) Quantos números são divisíveis por 3
+
+-> RESPOSTA
+
+VAR
+c, n, s5, d3: inteiro
+
+INICIO
+c <- 1
+s5 <- 0
+d3 <- 0
+enquanto (c <= 20) faça
+n <- randi(10)
+escreva("Nº ", c,": ")
+leia(n)
+  Se (n > 5) entao
+    s5 <- s5 + 1
+  fimse
+  se (n % 3 = 0) entao
+    d3 <- d3 + 1
+  fimse
+c <- c + 1
+fimenquanto
+escreval("Total de Nº acima de 5: ", s5)
+escreval("Total de Nº divisíveis por 3: ", d3)

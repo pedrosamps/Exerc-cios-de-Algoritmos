@@ -1,0 +1,18 @@
+#Faça um programa que leia 7 números inteiros e no final mostre o somatório
+entre eles.
+
+-> RESPOSTA
+
+VAR
+c, soma, n: inteiro
+
+INICIO
+c <- 1
+soma <- 0
+enquanto (c <= 7) faça
+   escreva("Nº ", c," : ")
+   leia(n)
+   soma <- soma + n
+   c <- c + 1
+fimenquanto
+escreva(soma)

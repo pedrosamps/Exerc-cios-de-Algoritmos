@@ -1,0 +1,30 @@
+#[DESAFIO] Vamos melhorar o jogo que fizemos no exercício 32. A partir de
+agora, o computador vai sortear um número entre 1 e 10 e o jogador vai ter 4
+tentativas para tentar acertar.
+
+-> RESPOSTA
+
+VAR
+comp, jog, c: inteiro
+
+INICIO
+c <- 1
+enquanto (c <= 4) faça
+ escreva("Escolha um Número de 1 a 10: ")
+ leia(jog)
+ comp <- randi (10) + 1
+ escreval("Computador escolheu o número: ", comp)
+ se jog = comp entao
+  escreval("Acertou!")
+   se (c <= 4) entao 
+     escreval("Você acertou na ", c, "ª tentativa!")
+   fimse
+   fimalgoritmo
+  senao
+    escreval("ERROU!")
+    se (c >= 4) entao
+       escreval("Perdeu! Você esgotou as 4 tentativas.")
+    fimse
+   fimse
+c <- c + 1
+fimenquanto

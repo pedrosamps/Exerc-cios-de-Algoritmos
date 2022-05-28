@@ -1,0 +1,28 @@
+#Faça um aplicativo que leia o preço de 8 produtos. No final, mostre na tela
+qual foi o maior e qual foi o menor preço digitados.
+
+-> RESPOSTA
+
+VAR
+c: inteiro
+n, mai, men: real
+
+INICIO
+c <- 1
+enquanto (c <= 8) faça
+  escreva("Preço ", c,": ")
+  leia(n)
+  se (c = 1) entao
+    mai <- n
+    men <- n
+  fimse
+  se (n > mai) entao
+    mai <- n
+  fimse
+  se (n < men) entao
+    men <- n
+  fimse
+c <- c + 1
+fimenquanto
+escreval("Maior preço: ", mai)
+escreval("Menor preço: ", men)

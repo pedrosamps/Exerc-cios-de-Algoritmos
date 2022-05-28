@@ -1,0 +1,24 @@
+#Crie um programa que leia 6 números inteiros e no final mostre quantos deles
+são pares e quantos são ímpares.
+
+-> RESPOSTA
+
+VAR
+c, n, spar, simp: inteiro
+
+INICIO
+c <- 1
+spar <- 0
+simp <- 0
+enquanto (c <= 6) faça
+  escreva("Nº ", c, ": ")
+  leia(n)
+  Se (n % 2 = 0) entao
+     spar <- spar + 1
+  senao
+     simp <- simp + 1
+  fimse
+c <- c + 1
+fimenquanto
+escreval("Soma dos Números PARES: ", spar)
+escreval("Soma dos Números ÍMPARES: ", simp)

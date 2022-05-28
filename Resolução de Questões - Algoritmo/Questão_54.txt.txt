@@ -1,0 +1,40 @@
+#Desenvolva um aplicativo que leia o peso e a altura de 7 pessoas, mostrando
+no final:
+a) Qual foi a média de altura do grupo
+b) Quantas pessoas pesam mais de 90Kg
+c) Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m
+d) Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg.
+
+-> RESPOSTA
+
+VAR
+c:inteiro
+pe, al, med, tot90, tot50, tot100: real
+
+INICIO
+c <- 1
+enquanto (c <= 7) faça
+ escreva("PESO: ")
+ leia(pe)
+ escreva("ALTURA: ")
+ leia(al)
+ med <- med + al/7
+ se pe > 90 entao
+  tot90 <- tot90 + 1
+ fimse
+ se al < 1.60 entao
+   se pe < 50 entao
+     tot50 <- tot50 + 1
+   fimse
+  fimse
+  se al > 1.90 entao
+   se pe > 100 entao
+     tot100 <- tot100 + 1
+   fimse
+  fimse
+c <- c + 1
+fimenquanto
+escreval("Média de altura do grupo: ", med:1:2)
+escreval("Total de pessoas +90 kg: ", tot90)
+escreval("Quantas pessoas que pesam menos de 50Kg tem menos de 1.60m: ", tot50)
+escreval("Quantas pessoas que medem mais de 1.90m pesam mais de 100Kg: ", tot100)

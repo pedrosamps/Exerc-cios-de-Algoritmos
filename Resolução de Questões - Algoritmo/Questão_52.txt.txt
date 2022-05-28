@@ -1,0 +1,33 @@
+#Crie um algoritmo que leia a idade de 10 pessoas, mostrando no final:
+a) Qual é a média de idade do grupo
+b) Quantas pessoas tem mais de 18 anos
+c) Quantas pessoas tem menos de 5 anos
+d) Qual foi a maior idade lida
+
+-> RESPOSTA
+
+VAR
+c, id, m18, m5, mid: inteiro
+meid: real
+
+INICIO
+c <- 1
+enquanto (c <= 10) faça
+  escreva("IDADE: ")
+  leia(id)
+  meid <- meid + id/10
+  Se (id > 18) entao
+    m18 <- m18 + 1
+  fimse
+  se (id < 5) entao
+    m5 <- m5 + 1
+  fimse
+  se (id > mid) entao
+    mid <- id
+  fimse
+c <- c + 1
+fimenquanto
+escreval("Média: ", meid)
+escreval("Total de pessoas + 18: ", m18)
+escreval("Total de pessoas com -5: ", m5)
+escreval("Maior idade: ", mid)

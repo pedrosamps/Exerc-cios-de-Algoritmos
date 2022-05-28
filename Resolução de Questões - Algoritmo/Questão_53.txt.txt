@@ -1,0 +1,40 @@
+#Faça um programa que leia a idade e o sexo de 5 pessoas, mostrando no final:
+a) Quantos homens foram cadastrados
+b) Quantas mulheres foram cadastradas
+c) A média de idade do grupo
+d) A média de idade dos homens
+e) Quantas mulheres tem mais de 20 anos
+
+-> RESPOSTA
+
+VAR
+c, id, toth, totm, m20, soma: inteiro
+med, medh: real
+sexo: caractere
+
+INICIO
+c <- 1
+enquanto (c <= 5) faça
+escreva("IDADE: ")
+leia(id)
+escreva("Sexo [M / F]: ")
+leia(sexo)
+med <- med + id/5
+  Se (sexo = "M") ou (sexo = "m") entao
+    toth <- toth + 1
+    soma <- soma + id
+  fimse
+  Se (sexo = "F") ou (sexo = "f") entao
+    totm <- totm + 1
+     Se (id > 20) entao
+      m20 <- m20 + 1
+     fimse
+   fimse
+c <- c + 1
+fimenquanto
+medh <- soma + toth
+escreval("Total de Homens: ", toth)
+escreval("Total de Mulheres: ", totm)
+escreval("Média de idade do grupo todo: ", med)
+escreval("Média de idade dos Homens: ", medh)
+escreva("Total de Mulheres acima de 20 anos: ", m20)

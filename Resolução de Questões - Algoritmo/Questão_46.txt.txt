@@ -1,0 +1,22 @@
+#Crie um programa que calcule e mostre na tela o resultado da soma entre 6 +
+8 + 10 + 12 + 14 + ... + 98 + 100.
+
+-> RESPOSTA
+
+VAR
+c, soma: inteiro
+
+INICIO
+c <- 6
+soma <- 0
+enquanto (c <= 100) faça
+   soma <- soma + c
+   escreva(c)
+   se (c = 0) entao
+      escreva("=")
+   senao
+      escreva(" + ")
+   fimse
+c <- c + 2
+fimenquanto
+escreva(soma)
