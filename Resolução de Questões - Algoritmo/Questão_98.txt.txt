@@ -1,0 +1,27 @@
+#Crie um programa que tenha uma função SuperSomador(), que vai receber dois
+números como parâmetro e depois vai retornar a soma de todos os valores no
+intervalo entre os valores recebidos.
+Ex:
+SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21
+SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
+
+-> RESPOSTA
+
+VAR
+vi, vf: inteiro
+Função SuperSomador (n1, n2: inteiro): inteiro
+var
+sm, c: inteiro
+inicio
+para c <- n1 até n2 faça
+ sm <- sm + c
+fimpara
+retorne sm
+fimfunção
+
+INICIO
+escreva("Valor inicial: ")
+leia(vi)
+escreva("Valor final: ")
+leia(vf)
+escreva("A soma de todos os valores entre ", vi, " e ", vf, " é igual a ", supersomador(vi, vf))

@@ -1,0 +1,21 @@
+#Crie uma lógica que leia um número inteiro e passe para um procedimento
+ParOuImpar() que vai verificar e mostrar na tela se o valor passado como
+parâmetro é PAR ou ÍMPAR.
+
+-> RESPOSTA
+
+VAR
+n1: inteiro
+Procedimento gerador (x: inteiro)
+inicio
+se x % 2 = 0 entao
+  escreva("PAR!")
+senao
+  escreva("ÍMPAR!")
+fimse
+fimprocedimento
+
+INICIO
+escreva("Digite um número: ")
+leia(n1)
+gerador(n1)

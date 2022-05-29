@@ -1,0 +1,31 @@
+#Refaça o exercício 91, só que agora em forma de função Maior(), mas faça uma
+adaptação que vai receber TRÊS números como parâmetro e vai retornar qual foi o
+maior entre eles.
+
+-> RESPOSTA
+
+VAR
+n1, n2, n3: inteiro
+função maior (a, b, c: inteiro):inteiro
+inicio
+se (a > b) e (a > c) entao
+  retorne a
+senao
+  se (b > a) e (b > c) entao
+    retorne b
+    senao
+      se (c > a) e (c > b) entao
+         retorne c
+      fimse
+    fimse
+fimse
+fimfunção
+
+INICIO
+escreva("Digite o 1º número: ")
+leia(n1)
+escreva("Digite o 2º número: ")
+leia(n2)
+escreva("Digite o 3º número: ")
+leia(n3)
+escreval("Maior número é: ", maior(n1,n2,n3))
