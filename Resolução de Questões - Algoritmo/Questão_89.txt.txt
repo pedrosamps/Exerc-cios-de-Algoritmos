@@ -1,0 +1,55 @@
+#Crie um programa que melhore o procedimento Gerador() da questão anterior
+para que o programador possa escolher uma entre três bordas:
++-------=======------+ Borda 1
+~~~~~~~~:::::::~~~~~~~ Borda 2
+<<<<<<<<------->>>>>>> Borda 3
+Ex: Uma chamada válida seria Gerador("Portugol Studio", 3, 2)
+~~~~~~~~:::::::~~~~~~~
+Portugol Studio
+Portugol Studio
+Portugol Studio
+~~~~~~~~:::::::~~~~~~~
+
+-> RESPOSTA
+
+VAR
+c, rep, bor: inteiro
+f: caractere
+Procedimento gerador(a: caractere; qtd: inteiro; borda: inteiro)
+inicio
+se borda = 1 entao
+ escreval("+-------=======------+")
+ para c <- 1 ate qtd faça
+  escreval(a)
+ fimpara
+ escreval("+-------=======------+")
+fimse
+se borda = 2 entao
+ escreval("~~~~~~~~:::::::~~~~~~~")
+ para c <- 1 ate qtd faça
+  escreval(a)
+ fimpara
+ escreval("~~~~~~~~:::::::~~~~~~~")
+fimse
+se borda = 3 entao
+ escreval("<<<<<<<<------->>>>>>>")
+ para c <- 1 ate qtd faça
+  escreval(a)
+ fimpara
+ escreval("<<<<<<<<------->>>>>>>")
+fimse
+FimProcedimento
+
+INICIO
+escreval("Escolha uma borda!")
+escreval("1 - +-------=======------+")
+escreval("2 - ~~~~~~~~:::::::~~~~~~~")
+escreval("3 - <<<<<<<<------->>>>>>>")
+escreva("Digite uma opção [1 / 2 / 3]: ")
+leia(bor)
+escreva("Digite uma frase: ")
+leia(f)
+escreva("Número de repetições da frase: ")
+leia(rep)
+limpatela
+gerador(f, rep, bor)

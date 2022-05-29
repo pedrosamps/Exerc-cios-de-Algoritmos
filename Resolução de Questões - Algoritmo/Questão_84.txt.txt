@@ -1,0 +1,25 @@
+#Crie um programa que leia o nome e a idade de 9 pessoas e guarde esses
+valores em dois vetores, em posições relacionadas. No final, mostre uma listagem
+contendo apenas os dados das pessoas menores de idade.
+
+-> RESPOSTA
+
+VAR
+n: vetor[1..9] de caractere
+i: vetor[1..9] de inteiro
+c: inteiro
+
+INICIO
+para c <- 1 ate 9 faça
+ escreva("NOME: ")
+ leia(n[c])
+ escreva("IDADE: ")
+ leia(i[c])
+fimpara
+escreval
+escreval("MENORES DE IDADE")
+para c <- 1 ate 9 faça
+ se i[c] < 18 entao
+   escreval("Nome: ", n[c]:19,"Idade: ", i[c])
+ fimse
+fimpara

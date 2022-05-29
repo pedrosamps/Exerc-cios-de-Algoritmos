@@ -1,0 +1,30 @@
+#Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+valores para um procedimento Maior() que vai verificar qual deles é o maior e
+mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
+informando essa característica.
+
+-> RESPOSTA
+
+VAR
+n1, n2: inteiro
+Procedimento gerador(x, y: inteiro)
+inicio
+se x > y entao
+ escreva("O nº ", x," é MAIOR!")
+senao
+ se x < y entao
+   escreva("O nº ", y," é MAIOR!")
+   senao
+     se x = y entao
+       escreva("Os números são IGUAIS!") 
+     fimse
+    fimse
+  fimse
+fimprocedimento
+
+INICIO
+escreva("Digite um número: ")
+leia(n1)
+escreva("Digite outro número: ")
+leia(n2)
+gerador(n1, n2)

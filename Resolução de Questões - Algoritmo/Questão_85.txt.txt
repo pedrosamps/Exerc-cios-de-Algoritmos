@@ -1,0 +1,26 @@
+#Faça um algoritmo que leia o nome, o sexo e o salário de 5 funcionários e
+guarde esses dados em três vetores. No final, mostre uma listagem contendo
+apenas os dados das funcionárias mulheres que ganham mais de R$5 mil.
+
+-> RESPOSTA
+
+VAR
+n: vetor[1..5] de caractere
+s: vetor[1..5] de caractere
+sa: vetor[1.5] de real
+c: inteiro
+
+INICIO
+para c <- 1 ate 5 faça
+ escreva("NOME: ")
+ leia(n[c])
+ escreva("SEXO [M / F]: ")
+ leia(s[c])
+ escreva("Salário: R$ ")
+ leia(sa[c])
+fimpara
+para c <- 1 ate 5 faça
+ se (copia(maiusc(s[c]),1,1) = "F") e (sa[c] > 5000) entao
+   escreval("Nome: ",n[c]:19,"Salário: R$ ", sa[c])
+ fimse
+fimpara

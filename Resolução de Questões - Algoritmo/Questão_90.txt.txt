@@ -1,0 +1,19 @@
+#Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+valores para um procedimento Somador() que vai calcular e mostrar a soma entre
+eles.
+
+-> RESPOSTA
+
+VAR
+n1, n2: inteiro
+Procedimento gerador (x, y: inteiro)
+inicio
+escreva("A soma é: ", x + y)
+fimprocedimento
+
+INICIO
+escreva("Digite um número: ")
+leia(n1)
+escreva("Digite outro número: ")
+leia(n2)
+gerador (n1, n2)

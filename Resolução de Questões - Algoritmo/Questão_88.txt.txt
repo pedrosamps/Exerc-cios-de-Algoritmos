@@ -1,0 +1,25 @@
+#Crie um programa que melhore o procedimento Gerador() da questão anterior
+para que mostre uma mensagem vário
+Ex: Ao chamar Gerador("Aprendendo Portugol", 4) aparece:
++-------=======------+
+Aprendendo Portugol
+Aprendendo Portugol
+Aprendendo Portugol
+Aprendendo Portugol
++-------=======------+
+
+-> RESPOSTA
+
+VAR
+C: inteiro
+Procedimento gerador (a: caractere; qtd: inteiro)
+inicio
+escreval("+-------=======------+")
+para c <- 1 ate qtd faça
+ escreval(a)
+fimpara
+escreval("+-------=======------+")
+fimprocedimento
+
+INICIO
+gerador("Olá, mundo!", 10)

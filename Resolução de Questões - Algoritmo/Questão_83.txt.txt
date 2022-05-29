@@ -1,0 +1,30 @@
+#[DESAFIO] Crie uma lógica que preencha um vetor de 20 posições com números
+aleatórios (entre 0 e 99) gerados pelo computador. Logo em seguida, mostre os
+números gerados e depois coloque o vetor em ordem crescente, mostrando no final
+os valores ordenados.
+
+-> RESPOSTA
+
+VAR
+vet: vetor [1..20] de inteiro
+c1, c2, aux: inteiro
+
+INICIO
+para c1 <- 1 ate 20 faça
+ vet <- randi (99)
+ escreva(vet[c1])
+fimpara
+para c1 <- 1 ate 19 faça
+ para c2 <- c1 + 1 ate 20 faça
+   se (vet[c1] > vet[c2]) entao
+     aux <- vet[c1]
+     vet[c1] <- vet[c2] 
+     vet[c2] <- aux
+   fimse
+  fimpara
+fimpara
+escreval
+escreval
+para c1 <- 1 ate 20 faça 
+ escreva(vet[c1])
+fimpara
