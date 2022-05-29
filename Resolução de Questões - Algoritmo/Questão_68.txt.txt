@@ -1,0 +1,36 @@
+#Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura
+“para”. No final, mostre na tela:
+a) Quantas mulheres foram cadastradas
+b) Quantos homens pesam mais de 100Kg
+c) A média de peso entre as mulheres
+d) O maior peso entre os homens
+
+-> RESPOSTA
+
+VAR
+c, n, totm, tot100: inteiro
+sexo: caractere
+med, peso, soma, maior: real
+Para c <- 1 até 8 faça
+ escreva("Sexo [M / F]: ")
+ leia(sexo)
+ escreva("Peso: ")
+ leia(peso)
+ Se (copia(maiusc(sexo),1,1) = "F") entao
+   totm <- totm + 1
+   soma <- soma + peso
+   med <- soma/totm
+ FimSe
+ Se (copia(maiusc(sexo),1,1) = "M") entao
+    Se (peso > 100) entao
+      tot100 <- tot100 + 1
+      Se (peso > maior) entao
+        maior <- peso
+      FimSe
+    FimSe
+ FimSe
+Fimpara
+escreval("Total de mulheres cadastradas: ", totm)
+escreval("Total de homens acima de 100 kg", tot100)
+escreval("Média de peso entre mulheres: ", med)
+escreval("Maior peso entre homens: ", maior)

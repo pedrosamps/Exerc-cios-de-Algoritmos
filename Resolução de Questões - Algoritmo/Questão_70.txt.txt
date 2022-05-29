@@ -1,0 +1,23 @@
+#[DESAFIO] Faça um programa que mostre os 10 primeiros elementos da Sequência
+de Fibonacci:
+1 1 2 3 5 8 13 21...
+
+-> RESPOSTA
+
+VAR
+c, t, c1, c2, c3: inteiro
+
+INICIO
+escreva("Quantos termos: ")
+leia(t)
+c1 <- 0
+c2 <- 1
+escreva(c1, " -> ", c2)
+c <- 3
+para c <- c até t faça
+  c3 <- c1 + c2
+  escreva(" ->", c3)
+  c1 <- c2
+  c2 <- c3
+  c <- c + 1
+Fimpara

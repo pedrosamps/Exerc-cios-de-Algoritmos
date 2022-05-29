@@ -1,0 +1,38 @@
+#Crie um programa usando a estrutura “faça enquanto” que leia vários números.
+A cada laço, pergunte se o usuário quer continuar ou não. No final, mostre na
+tela:
+a) O somatório entre todos os valores
+b) Qual foi o menor valor digitado
+c) A média entre todos os valores
+d) Quantos valores são pares
+
+-> RESPOSTA
+
+VAR
+n, c, tot, totpar, soma, menor: Inteiro
+med: real
+cont: caractere
+
+INICIO
+cont <- "N"
+c <- 1
+Repita
+ escreva("Digite um número: ")
+ leia(n)
+ Se (n % 2 = 0) entao
+   totpar <- totpar + 1
+ fimse
+ soma <- soma + n
+ tot <- tot + 1
+ med <- soma/tot
+ Se (n < menor) ou (menor = 0) entao
+   menor <- n
+ fimse
+ escreva("Continuar [S / N]: ")
+ leia(cont)
+ c <- c + 1
+Ate (copia(maiusc(cont),1,1) = "N")
+escreval("Soma de todos os números: ", soma)
+escreval("Menor valor inserido: ", menor)
+escreval("Média de todos os valores: ", med)
+escreval("Total de números PARES: ", totpar)

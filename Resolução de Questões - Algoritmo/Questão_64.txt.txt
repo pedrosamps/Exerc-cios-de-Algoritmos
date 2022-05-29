@@ -1,0 +1,13 @@
+#Desenvolva um programa usando a estrutura “para” que mostre na tela a
+seguinte contagem:
+0 5 10 15 20 25 30 35 40 Acabou!
+
+-> RESPOSTA
+
+VAR
+c: inteiro
+
+INICIO
+para c <- 0 até 40 passo 5 faça
+   escreva(c)
+fimpara

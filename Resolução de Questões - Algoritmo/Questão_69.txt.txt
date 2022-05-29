@@ -1,0 +1,21 @@
+#[DESAFIO] Desenvolva um programa que leia o primeiro termo e a razão de uma
+PA (Progressão Aritmética), mostrando na tela os 10 primeiros elementos da PA e
+a soma entre todos os valores da sequência.
+
+-> RESPOSTA
+
+VAR
+c, r1, r, dec, soma: inteiro
+
+INICIO
+escreva("1º Termo: ")
+leia(r1)
+escreva("Razão: ")
+leia(r)
+dec <- r1 + (10 - 1) * r
+Para c <- r1 até dec passo r faça
+   escreva(c, " -> ")
+   soma <- soma + c
+fimpara
+escreval("Fim!")
+escreval(soma)

@@ -1,0 +1,15 @@
+#Faça um programa que preencha automaticamente um vetor numérico com 8
+posições, conforme abaixo:
+999 999 999 999 999 999 999 999
+
+-> RESPOSTA
+
+VAR
+n: vetor [0..7] de inteiro
+c: inteiro
+
+INICIO
+para c <- 0 até 7  faça
+ n[c] <- 999
+ escreva(n[c])
+fimpara
