@@ -1,0 +1,16 @@
+#Crie um programa que preencha automaticamente um vetor numérico com 7
+números gerados aleatoriamente pelo computador e depois mostre os valores
+gerados na tela.
+
+-> RESPOSTA
+
+VAR
+n: vetor [1..7] de inteiro
+c, n1: inteiro
+
+INICIO
+Para c <- 1 até 7 faça
+ n1 <- randi(7)
+ n[c] <- n1
+ escreva(n[c])
+fimpara

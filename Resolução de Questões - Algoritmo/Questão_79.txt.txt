@@ -1,0 +1,22 @@
+#Desenvolva um programa que leia 10 números inteiros e guarde-os em um vetor.
+No final, mostre quais são os números pares que foram digitados e em que
+posições eles estão armazenados.
+
+-> RESPOSTA
+
+VAR
+p: vetor[1..10] de inteiro
+posi: vetor [1..10] de inteiro
+c: inteiro
+
+INICIO
+para c <- 1 ate 10 faça
+ escreva("Número: ")
+ leia(p[c])
+ posi[c] <- c
+fimpara
+para c <- 1 ate 10 faça
+ se p[c] % 2 = 0 entao
+   escreval(p[c]:4, " na posição: ", posi[c]:4,"º")
+ fimse
+fimpara

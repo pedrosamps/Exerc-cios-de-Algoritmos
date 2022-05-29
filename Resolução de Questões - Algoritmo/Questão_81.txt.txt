@@ -1,0 +1,38 @@
+#Crie um programa que leia a idade de 8 pessoas e guarde-as em um vetor. No
+final, mostre:
+a) Qual é a média de idade das pessoas cadastradas
+b) Em quais posições temos pessoas com mais de 25 anos
+c) Qual foi a maior idade digitada (podem haver repetições)
+d) Em que posições digitamos a maior idade
+
+-> RESPOSTA
+
+VAR
+p: vetor [1..8] de inteiro
+i: vetor [1..8] de inteiro
+c, id, posi, posm, soma, maior: inteiro
+m: real
+
+INICIO
+para c <- 1 ate 8 faça
+ escreva("IDADE: ")
+ leia(p[c])
+ i[c] <- c
+ soma <- soma + p[c]
+ med <- soma / c
+ se p[c] > maior entao
+    maior <- p[c]
+    posm <- i[c]
+ fimse
+fimpara
+escreval("Média de idades: ", med)
+escreval("Posição de pessoas acima de 25 anos: ")
+ para c <- 1 ate 8 faça
+   se p[c] > 25 entao
+     posi <- i[c]
+     escreva(posi)
+   fimse
+ fimpara
+escreval
+escreval("Maior idade inserida: ", maior)
+escreval("Posição da maior idade: ", posm)

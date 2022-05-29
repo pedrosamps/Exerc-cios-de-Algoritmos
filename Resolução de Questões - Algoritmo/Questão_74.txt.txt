@@ -1,0 +1,19 @@
+#Crie um programa que preencha automaticamente (usando lógica, não apenas
+atribuindo diretamente) um vetor numérico com 10 posições, conforme abaixo:
+5 3 5 3 5 3 5 3 5 3
+
+-> RESPOSTA
+
+VAR
+n: vetor [0..9] de inteiro
+c: inteiro
+
+INICIO
+Para c <- 0 até 9 faça
+ se (c % 2 = 0) entao
+   n[c] <- 5
+ senao
+   n[c] <- 3
+ fimse
+ escreva(n[c])
+fimpara

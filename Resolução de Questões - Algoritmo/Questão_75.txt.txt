@@ -1,0 +1,23 @@
+#Crie um programa que preencha automaticamente (usando lógica, não apenas
+atribuindo diretamente) um vetor numérico com 15 posições com os primeiros
+elementos da sequência de Fibonacci:
+1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+
+-> RESPOSTA
+
+VAR
+n: vetor [1..15] de inteiro
+c, fb1, fb2: inteiro
+
+INICIO
+fb1 <- 0
+fb2 <- 1
+n[1] <- 1
+escreva(n[1], " ->")
+para c <- 1 até 15 faça
+ n[c] <- fb1 + fb2 
+ escreva(n[c], " ->")
+ fb1 <- fb2
+ fb2 <- n[c]
+fimpara
+escreva("FIM!")

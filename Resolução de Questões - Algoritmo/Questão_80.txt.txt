@@ -1,0 +1,35 @@
+#Faça um algoritmo que preencha um vetor de 30 posições com números entre 1 e
+15 sorteados pelo computador. Depois disso, peça para o usuário digitar um
+número (chave) e seu programa deve mostrar em que posições essa chave foi
+encontrada. Mostre também quantas vezes a chave foi sorteada.
+
+-> RESPOSTA
+
+VAR
+p: vetor [1..30] de inteiro
+posi: vetor[1..30] de inteiro
+c, n, q: inteiro
+Procedimento Proc ()
+inicio
+ escreval("Sorteando...")
+ timer(5)
+fimprocedimento
+
+INICIO
+ escreva("Adivinhe um número: ")
+ leia(n)
+ proc ()
+ para c <- 1 até 30 faça 
+   p[c] <- randi(15)
+   escreva(p[c])
+   posi[c] <- c
+ fimpara
+ escreval
+ escreval
+ para c <- 1 até 30 faça
+   se n = p[c] entao
+     escreval("Nº ", n, " encontrado na posição: ", posi[c])
+     q <- q + 1
+   fimse
+ fimpara
+escreval("O nº ", n," foi encontrado na posição ", q, "x.")

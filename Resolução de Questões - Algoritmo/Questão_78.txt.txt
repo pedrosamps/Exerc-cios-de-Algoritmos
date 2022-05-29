@@ -1,0 +1,21 @@
+#Escreva um programa que leia 15 números e guarde-os em um vetor. No final,
+mostre o vetor inteiro na tela e em seguida mostre em que posições foram
+digitados valores que são múltiplos de 10.
+
+-> RESPOSTA
+
+VAR
+n: vetor [1..15] de Inteiro
+c: inteiro
+
+INICIO
+para c <- 1 até 15 faça
+ escreva("Digite um número: ")
+ leia (n[c])
+fimpara
+para c <- 1 ate 15 faça
+ se n % 10 = 0 faça
+    escreva("[ ", n[c]," ]")
+ senao
+    escreva(n[c])
+fimpara
