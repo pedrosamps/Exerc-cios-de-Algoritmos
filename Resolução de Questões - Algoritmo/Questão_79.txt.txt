@@ -6,17 +6,18 @@ posições eles estão armazenados.
 
 VAR
 p: vetor[1..10] de inteiro
-posi: vetor [1..10] de inteiro
+//posi: vetor [1..10] de inteiro
 c: inteiro
 
 INICIO
 para c <- 1 ate 10 faça
  escreva("Número: ")
  leia(p[c])
- posi[c] <- c
+ //posi[c] <- c
 fimpara
 para c <- 1 ate 10 faça
  se p[c] % 2 = 0 entao
-   escreval(p[c]:4, " na posição: ", posi[c]:4,"º")
+   //escreval(p[c]:4, " na posição: ", posi[c]:4,"º")
+   escreval(p[c]:4, " na posição: ", c:4,"º")
  fimse
 fimpara
